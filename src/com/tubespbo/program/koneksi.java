@@ -7,7 +7,7 @@ package com.tubespbo.program;
 
 /**
  *
- * @@author Hakim, Febby, Jufe
+ * @author Asus
  */
 
 import java.sql.Connection;

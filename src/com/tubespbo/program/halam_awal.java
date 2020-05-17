@@ -13,25 +13,23 @@ import java.sql.SQLException;
  *
  * @author Muhammad Abdul Hakim
  */
-public class home {
-    
+
+public class halam_awal {
     private static Connection MySQLConfig;
     
     public static Connection configDB()throws SQLException{
         try{
             String url = "jdbc:mysql://localhost:3306/apotek_rosegold";
             String user = "root";
-            String pass = "";
+            String pas = "";
             
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-        
+            String pass = null;
             MySQLConfig = DriverManager.getConnection(url, user, pass);
             
         }catch(SQLException e){
             System.out.println("Gagal Koneksi ke Database" + e.getMessage());
         }
         return MySQLConfig;
-            
     }
-    
 }

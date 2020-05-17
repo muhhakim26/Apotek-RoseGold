@@ -13,9 +13,9 @@ import java.sql.SQLException;
  *
  * @author Muhammad Abdul Hakim
  */
-public class home {
+public class user {
     
-    private static Connection MySQLConfig;
+     private static Connection MySQLConfig;
     
     public static Connection configDB()throws SQLException{
         try{
@@ -24,7 +24,6 @@ public class home {
             String pass = "";
             
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-        
             MySQLConfig = DriverManager.getConnection(url, user, pass);
             
         }catch(SQLException e){
